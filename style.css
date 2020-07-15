@@ -34,7 +34,7 @@ article {
 }
 .navi li {
   display: inline-block;
-  width: 20%;
+  width: 25%;
   padding: 40px;
   -webkit-transition-duration: 0.5s; /* Safari */
   transition-duration: 0.5s;
@@ -114,4 +114,65 @@ footer a {
 footer a:hover {
     text-decoration: none;
     color: #c2c2c2;
+}
+@media only screen and (max-width: 992px) {
+    .content-box {
+      width: 100%;
+      margin: 0px auto;
+    }
+    .navi {
+        background-color: rgba(0,0,0,0.5);
+    }
+    .navi li {
+      display: inline-block;
+      width: 50%;
+      padding: 25px;
+      -webkit-transition-duration: 0.5s; /* Safari */
+      transition-duration: 0.5s;
+    }
+    .bord {
+      border-bottom: 1px dotted rgba(255,255,255,0.3);
+    }
+    .bord2 {
+      border-right: 1px dotted rgba(255,255,255,0.3);
+    }
+    .navi li a {
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #fff;
+      font-family: 'EB Garamond', serif;
+      text-shadow: 0 0 1px rgba(0,0,0,0.8);
+    }
+    .navi li:hover {
+      background-color: rgba(0,0,0,0.2);
+    }
+    .header {
+      background-image:url('dogs.png');
+      background-repeat: no-repeat;
+      background-size: 100vh;
+      background-position: center right;
+      background-color: rgba(0,0,0,0.9);
+      width: 100%;
+      height:400px;
+      padding: 32vh 0 0 0;
+      text-align: center;
+    }
+    .header h1 {
+      color: #fff;
+      font-size: 58px;
+      text-shadow: 1px 0px 3px rgba(0,0,0,0.8);
+    }
+    .header h2 {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 28px;
+      color: #fff;
+      margin-left: 0vw;
+      text-shadow: 0 0 3px rgba(0,0,0,0.8);
+    }
+    .content {
+      padding: 50px 50px 50px 50px;
+      font-size: 18px;
+    }
+
 }
